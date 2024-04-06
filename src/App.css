@@ -1,0 +1,111 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.emoji-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selected-emoji {
+  border: 1px solid;
+  height: 85px;
+  width: 140px;
+  margin-top: 20px;
+}
+
+p {
+  /* margin: 15px 5px; */
+  padding: 7px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.2em;
+  font-family: emoji;
+  font-weight: 100;
+}
+
+.emoji-picker {
+  margin-top: 15px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dark-mode {
+  background-color: black;
+  padding: 14px;
+}
+
+.dark-mode h1 {
+  color: white;
+}
+
+.dark-mode .selected-emoji {
+  text-decoration-color: white;
+  border: 1px solid white;
+}
+
+.dark-mode p {
+  color: white;
+}
+
+button.save-button {
+  border: 1px solid;
+  color: black;
+  padding: 15px 32px;
+  background-color: white;
+  display: inline;
+  font-size: 15px;
+  cursor: pointer;
+}
